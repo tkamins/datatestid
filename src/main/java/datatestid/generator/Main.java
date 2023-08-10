@@ -7,7 +7,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
-import java.util.List;
+import java.util.Set;
 
 import datatestid.generator.uicontrols.Ahref;
 import datatestid.generator.uicontrols.Button;
@@ -26,7 +26,7 @@ import org.jsoup.parser.Parser;
 
 public class Main {
 
-    private static final List<UIControl> uiControls = List.of(
+    private static final Set<UIControl> uiControls = Set.of(
             new TextInput(),
             new Checkbox(),
             new Button(),

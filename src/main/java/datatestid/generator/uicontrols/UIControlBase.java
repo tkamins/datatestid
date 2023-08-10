@@ -14,7 +14,7 @@ abstract class UIControlBase implements UIControl {
     public boolean process(final Document document) {
         return getElements(document).stream()
                 .map(this::generateDataTestId)
-                .reduce(false, (a, b) -> a|b);
+                .reduce(false, (a,b) -> a|b);
     }
 
     abstract Elements getElements(final Document document);
